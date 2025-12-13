@@ -1,0 +1,27 @@
+[13-Dec-2025 08:45:34 UTC] PHP Warning:  PHP Startup: pdo_sqlsrv: Unable to initialize module
+Module compiled with module API=20220829
+PHP    compiled with module API=20240924
+These options need to match
+ in Unknown on line 0
+[13-Dec-2025 08:45:34 UTC] PHP Warning:  PHP Startup: sqlsrv: Unable to initialize module
+Module compiled with module API=20220829
+PHP    compiled with module API=20240924
+These options need to match
+ in Unknown on line 0
+[13-Dec-2025 08:45:34 UTC] PHP Deprecated:  PHP Startup: session.sid_length INI setting is deprecated in Unknown on line 0
+[13-Dec-2025 08:45:34 UTC] PHP Deprecated:  PHP Startup: session.sid_bits_per_character INI setting is deprecated in Unknown on line 0
+[13-Dec-2025 08:45:34 UTC] PHP Warning:  require(D:\Projects\personal\yourphptester/vendor/autoload.php): Failed to open stream: No such file or directory in D:\Projects\personal\yourphptester\artisan on line 9
+[13-Dec-2025 08:45:34 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Projects\personal\yourphptester/vendor/autoload.php' (include_path='./includes') in D:\Projects\personal\yourphptester\artisan:9
+Stack trace:
+#0 {main}
+  thrown in D:\Projects\personal\yourphptester\artisan on line 9
+[13-Dec-2025 08:46:19 UTC] PHP Warning:  require(D:\Projects\personal\yourphptester/vendor/autoload.php): Failed to open stream: No such file or directory in D:\Projects\personal\yourphptester\artisan on line 9
+[13-Dec-2025 08:46:19 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Projects\personal\yourphptester/vendor/autoload.php' (include_path='./includes') in D:\Projects\personal\yourphptester\artisan:9
+Stack trace:
+#0 {main}
+  thrown in D:\Projects\personal\yourphptester\artisan on line 9
+[13-Dec-2025 08:49:15 UTC] PHP Warning:  require(D:\Projects\personal\yourphptester/vendor/autoload.php): Failed to open stream: No such file or directory in D:\Projects\personal\yourphptester\artisan on line 9
+[13-Dec-2025 08:49:15 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'D:\Projects\personal\yourphptester/vendor/autoload.php' (include_path='./includes') in D:\Projects\personal\yourphptester\artisan:9
+Stack trace:
+#0 {main}
+  thrown in D:\Projects\personal\yourphptester\artisan on line 9
