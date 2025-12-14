@@ -1,6 +1,6 @@
-<div class="codepad">
-    <h2>PHP Code Tester</h2>
-    <form action="{{ route('execute') }}" method="post" style="display:flex; gap:1rem; align-items:flex-start;">
+<div class="codepad container py-4">
+    <h2 class="mb-3 text-white">PHP Code Tester</h2>
+    <form action="{{ route('execute') }}" method="post">
         @csrf
         <div style="flex:1;">
             <label for="php_version">PHP Version:</label>

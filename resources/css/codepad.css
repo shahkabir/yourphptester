@@ -1,0 +1,7 @@
+.codepad{background: linear-gradient(180deg,#0b0b0b 0%, #2d2d2d 100%);border-radius:8px;padding:1.25rem;color:#fff}
+.code-input,.code-output{background:rgba(0,0,0,0.6);color:#eaeaea;border:1px solid rgba(255,255,255,0.06);font-family:Menlo,Monaco,Consolas,"Liberation Mono",monospace;resize:vertical}
+.code-output{white-space:pre-wrap}
+.btn-orange{background:#ff6a00;border-color:#ff6a00;color:#fff}
+.btn-orange:hover{background:#ff5515;border-color:#ff5515}
+.form-label.text-white{color:#f1f1f1}
+@media (max-width:767px){.codepad{padding:.75rem}}

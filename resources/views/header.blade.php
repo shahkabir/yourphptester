@@ -1,5 +1,7 @@
-<header>
-    <nav>
-        <h1>Your PHP Tester</h1>
-    </nav>
-</header>
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <span class="me-2">🧪</span> PHP Code Tester
+        </a>
+    </div>
+</nav>
