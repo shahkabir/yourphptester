@@ -2,36 +2,45 @@
 
 namespace App\Http\Services;
 
+use Illuminate\Http\JsonResponse;
+
 class CodeExecutorService
 {
-    public function execute(string $version, string $code): array
+    public function execute(string $version, string $code): JsonResponse
     {
         // Implementation for executing the PHP code based on version
         // This is a placeholder for the actual execution logic
-        $sandbox = storage_path("sandbox/php{$version}");
-
+        $sandbox = storage_path("sandbox"); ///php{$version}
+        
         // Write code to a temp file
         $file = $sandbox . '/input_' . uniqid() . '.php';
-        file_put_contents($file, $code);
 
+        $code = "<?php\n" . $code . "\n?>";
+        /*echo 'file:'. */file_put_contents($file, $code);
+        //die();
         // Execute using correct PHP binary
-        $binary = $this->phpBinaryPath($version);
-
-        $cmd = escapeshellcmd("$binary $file 2>&1");
-        $output = shell_exec($cmd);
+        /*echo*/ $phpExecutionPath = $this->phpBinaryPath($version);
+        //die();
+        $start = microtime(true);
+        $cmd = escapeshellcmd("$phpExecutionPath $file 2>&1");
+        $end = microtime(true);
+        /*echo*/ $output = shell_exec($cmd);
+        //die();
 
         unlink($file);
 
         return response()->json([
-            'output' => $output
-        ])->toArray();
+            'output' => $output,
+            'execution_time' => ($end - $start) * 1000 // in milliseconds,
+        ]);
     }
 
     private function phpBinaryPath($versionWithPath)
     {
         //It will return from .env file
         //return "/usr/bin/php{$version}"; 
-        return env( strtoupper($versionWithPath) );
+        return env( strtoupper($versionWithPath), 'D:\php-8.3\php.exe' );
+        //die();
         // You will adjust depending on Hostinger's environment
 
         // switch ($version) {
