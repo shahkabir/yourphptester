@@ -1,7 +1,38 @@
-.codepad{background: linear-gradient(180deg,#0b0b0b 0%, #2d2d2d 100%);border-radius:8px;padding:1.25rem;color:#fff}
-.code-input,.code-output{background:rgba(0,0,0,0.6);color:#eaeaea;border:1px solid rgba(255,255,255,0.06);font-family:Menlo,Monaco,Consolas,"Liberation Mono",monospace;resize:vertical}
+:root{
+	--bg-1:#0f1720; /* deep slate */
+	--bg-2:#1f2933; /* softer slate */
+	--card:#111827;
+	--muted:#9aa5b1;
+	--accent:#ff7a2f; /* orange */
+	--panel:#0f1720;
+}
+
+.site-navbar{background:linear-gradient(90deg,var(--bg-2),var(--bg-1));border-bottom:1px solid rgba(255,255,255,0.03)}
+.site-navbar .navbar-brand{color:#ffffff;font-weight:600}
+.site-navbar .brand-icon{font-size:1.1rem}
+.site-footer{background:transparent;padding:0.75rem 0;border-top:1px solid rgba(255,255,255,0.03)}
+.site-footer .nav-link{color:var(--muted);padding:0 .75rem}
+
+.codepad{background:linear-gradient(180deg,rgba(17,24,39,0.95) 0%, rgba(0,0,0,0.9) 100%);border-radius:12px;padding:1.25rem;color:#e6eef3}
+.card-dark{background:transparent;border:1px solid rgba(255,255,255,0.04);box-shadow:0 6px 18px rgba(3,7,18,0.6)}
+
+.code-input,.code-output{background:linear-gradient(180deg,rgba(255,255,255,0.02), rgba(255,255,255,0.01));color:#e6eef3;border:1px solid rgba(255,255,255,0.04);font-family:Menlo,Monaco,Consolas,"Liberation Mono",monospace;resize:vertical}
+.code-input::placeholder,.code-output::placeholder{color:rgba(230,238,243,0.45)}
 .code-output{white-space:pre-wrap}
-.btn-orange{background:#ff6a00;border-color:#ff6a00;color:#fff}
-.btn-orange:hover{background:#ff5515;border-color:#ff5515}
-.form-label.text-white{color:#f1f1f1}
-@media (max-width:767px){.codepad{padding:.75rem}}
+
+.btn-orange{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-orange:hover{background:#ff5f0d;border-color:#ff5f0d}
+
+.ad-placeholder{width:120px;height:600px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px dashed rgba(255,255,255,0.04);color:var(--muted);display:flex;justify-content:center;align-items:center;font-size:.9rem;border-radius:6px}
+
+label.form-label{color:#dbe7ef}
+.text-muted{color:var(--muted) !important}
+
+@media (max-width:991px){
+	.ad-placeholder{display:none}
+}
+
+@media (max-width:767px){
+	.codepad{padding:.9rem}
+	.card-body{padding:.9rem}
+}
