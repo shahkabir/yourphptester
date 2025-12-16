@@ -17,7 +17,7 @@
                                 <div class="mb-3">
                                     <label for="php_version" class="form-label">PHP Version</label>
                                     <select name="php_version" id="php_version" class="form-select">
-                                        <option value="PHP84" selected>8.4</option>
+                                        <option value="PHP84" selected>PHP 8.4</option>
                                         <option value="PHP83">PHP 8.3</option>
                                         <option value="PHP82">PHP 8.2</option>
                                         <option value="PHP81">PHP 8.1</option>

@@ -17,8 +17,8 @@ Route::post('execute', [CodeExecuteController::class, 'run'])->name('execute');
 
 
 Route::get('privacy-policy',function(){
-	phpinfo();
-});
+	return view('legal.privacy-policy');
+})->name('privacy-policy');
 
 Route::get('terms-of-service',function(){
     phpinfo();
