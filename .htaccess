@@ -1,8 +1,29 @@
-Options +SymLinksIfOwnerMatch
-RewriteEngine On
+#Options +SymLinksIfOwnerMatch
+#RewriteEngine On
 
 # Allow Installatron requests
-RewriteCond %{REQUEST_FILENAME} deleteme\.\w+\.php
-RewriteRule (.*) - [L] 
+#RewriteCond %{REQUEST_FILENAME} deleteme\.\w+\.php
+#RewriteRule (.*) - [L] 
 
-RewriteRule ^ index.php [L]
+#RewriteRule ^ index.php [L]
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # 1. Allow Installatron requests (Kept from your original file)
+    RewriteCond %{REQUEST_FILENAME} deleteme\.\w+\.php
+    RewriteRule (.*) - [L]
+
+    # 2. Redirect Trailing Slashes If Not A Folder
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # 3. Rewrite everything to the 'public' subdirectory
+    # This effectively makes 'public_html/public' your document root
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>

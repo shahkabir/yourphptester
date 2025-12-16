@@ -17,17 +17,16 @@
                                 <div class="mb-3">
                                     <label for="php_version" class="form-label">PHP Version</label>
                                     <select name="php_version" id="php_version" class="form-select">
-                                        <option value="latest">Latest</option>
-                                        <option value="8.3" selected>8.3</option>
-                                        <option value="8.2">8.2</option>
-                                        <option value="8.1">8.1</option>
-                                        <option value="8.0">8.0</option>
-                                        <option value="7.4">7.4</option>
-                                        <option value="7.3">7.3</option>
-                                        <option value="7.2">7.2</option>
-                                        <option value="7.1">7.1</option>
-                                        <option value="7.0">7.0</option>
-                                        <option value="5.6">5.6</option>
+                                        <option value="PHP83" selected>8.3</option>
+                                        <option value="PHP82">8.2</option>
+                                        <option value="PHP81">8.1</option>
+                                        <option value="PHP80">8.0</option>
+                                        <option value="PHP74">7.4</option>
+                                        <option value="PHP73">7.3</option>
+                                        <option value="PHP72">7.2</option>
+                                        <option value="PHP71">7.1</option>
+                                        <option value="PHP70">7.0</option>
+                                        <option value="PHP56">5.6</option>
                                     </select>
                                 </div>
 
