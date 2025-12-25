@@ -28,7 +28,7 @@ class CodeExecutorService
 
                 $start = microtime(true);
 
-                $cmd = escapeshellcmd($phpExecutionPath) . ' ' . escapeshellarg($file);
+                $cmd = escapeshellcmd($phpExecutionPath) . ' -d display_errors=1 -d error_reporting=E_ALL ' . escapeshellarg($file);
                 //dd($cmd);
                 
                 $descriptors = [
