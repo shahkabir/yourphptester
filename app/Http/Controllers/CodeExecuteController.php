@@ -33,6 +33,8 @@ class CodeExecuteController extends Controller
 
         $data = $result->getData(true);
 
+        //dd($data);
+
         return view('main', [
             'php_version' => $request->php_version,
             'code'        => $request->code,
