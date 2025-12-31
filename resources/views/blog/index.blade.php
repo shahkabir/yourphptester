@@ -36,7 +36,7 @@
                             <p class="text-muted flex-grow-1">
                                 Avoid null errors and write cleaner PHP code using the nullsafe operator introduced in PHP 8.
                             </p>
-                            <a href="/blog/php-8-nullsafe-operator" class="btn btn-sage btn-sm mt-auto">
+                            <a href="/blogs/php-8-nullsafe-operator" class="btn btn-sage btn-sm mt-auto">
                                 Read More
                             </a>
                         </div>
@@ -49,7 +49,7 @@
                             <p class="text-muted flex-grow-1">
                                 Understand how PHP 8’s JIT compiler works and when it actually improves performance.
                             </p>
-                            <a href="/blog/php-8-jit-performance" class="btn btn-sage btn-sm mt-auto">
+                            <a href="/blogs/php-8-jit-performance" class="btn btn-sage btn-sm mt-auto">
                                 Read More
                             </a>
                         </div>
@@ -62,7 +62,7 @@
                             <p class="text-muted flex-grow-1">
                                 Learn how union types bring better type safety and cleaner APIs in PHP 8.
                             </p>
-                            <a href="/blog/php-8-union-types" class="btn btn-sage btn-sm mt-auto">
+                            <a href="/blogs/php-8-union-types" class="btn btn-sage btn-sm mt-auto">
                                 Read More
                             </a>
                         </div>
