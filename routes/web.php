@@ -23,8 +23,8 @@ Route::get('/blogs', function () {
     return view('blog.index');
 })->name('blog.cards');
 
-Route::get('/blog/php-8-nullsafe-operator', fn () => view('blog.php8-nullsafe'));
-Route::get('/blog/php-8-jit-performance', fn () => view('blog.php8-jit'));
-Route::get('/blog/php-8-union-types', fn () => view('blog.php8-union'));
+Route::get('/blogs/php-8-nullsafe-operator', fn () => view('blog.php8-nullsafe'));
+Route::get('/blogs/php-8-jit-performance', fn () => view('blog.php8-jit'));
+Route::get('/blogs/php-8-union-types', fn () => view('blog.php8-union'));
 
 
