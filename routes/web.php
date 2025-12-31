@@ -21,11 +21,11 @@ Route::get('privacy-policy',function(){
 })->name('privacy-policy');
 
 Route::get('terms-of-service',function(){
-    phpinfo();
-});
+    return view('legal.terms-of-service');
+})->name('terms-of-service');
 Route::get('about-us',function(){
-    phpinfo();
+    
 });
 Route::get('contact-us',function(){
-    phpinfo();
+    
 });
