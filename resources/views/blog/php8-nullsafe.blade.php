@@ -5,8 +5,8 @@
     <meta name="description" content="Learn how the PHP 8 nullsafe operator (?->) helps avoid null errors and simplifies PHP code with real examples.">
     <meta name="keywords" content="PHP 8 nullsafe operator, PHP 8 features, PHP null handling">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    @include('styles')
 </head>
-@include('styles')
 <body>
 @include('header')
 <div class="container my-5">

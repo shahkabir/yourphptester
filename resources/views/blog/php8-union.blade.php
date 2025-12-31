@@ -5,8 +5,8 @@
     <meta name="description" content="Learn how union types in PHP 8 improve type safety and modern PHP development.">
     <meta name="keywords" content="PHP 8 union types, PHP typing, PHP 8 features">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    @include('styles')
 </head>
-@include('styles')
 <body>
 @include('header')
 <div class="container my-5">

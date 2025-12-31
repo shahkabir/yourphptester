@@ -5,8 +5,8 @@
     <meta name="description" content="Understand PHP 8 JIT compiler, how it works, and when it improves PHP performance.">
     <meta name="keywords" content="PHP 8 JIT, PHP performance, PHP 8 speed">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    @include('styles')
 </head>
-@include('styles')
 <body>
 @include('header')
 <div class="container my-5">
