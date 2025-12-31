@@ -3,7 +3,7 @@
         <!-- left ad slot -->
         <div class="col-12 col-lg-2 d-none d-lg-flex justify-content-center align-items-start" id="ad-left">
             <!-- Ad placeholder (left) -->
-            <div class="ad-placeholder">Ad</div>
+            <div class="ad-placeholder"></div>
         </div>
 
         <!-- main content -->
@@ -62,7 +62,7 @@
         <!-- right ad slot -->
         <div class="col-12 col-lg-2 d-none d-lg-flex justify-content-center align-items-start" id="ad-right">
             <!-- Ad placeholder (right) -->
-            <div class="ad-placeholder">Ad</div>
+            <div class="ad-placeholder"></div>
         </div>
     </div>
 </div>
